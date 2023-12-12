@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PaLAZZO❤️</title>
+    <link rel="stylesheet" href="wedding.css">
+    <link rel="icon" type="img/png" href="favicon-32x32.png">
+</head>
+<body>
+
+
+
+    <div class="hero">
+        <div class="navbar">
+            <ul>
+                <li><a href="restaurant.html"><b>Restuarants</b></a> </li>
+            </ul>
+        </div>    
+
+
+<header>
+    <div class="event">
+        <h1>"Welcome to Joy of Love, laughter and Celebration"</h1>
+        <p>Ladies and gentlemen, distinguished guests, and beloved friends and family, we offer our heartfelt and joyous greeting to each of you as we join here tonight for an incredible occasion—a wedding party that promises to be a night of love, laughter, and celebration like no other.</p>    
+        
+    </div>
+</header>
+<div class="event2">
+    <h1>Host Your Wedding Here..</h1>
+    <div class="image-container">
+        <img src="hall.jpg" alt="Wedding Hall 1">
+        <img src="hall2.jpg" alt="Wedding Hall 2">
+        <img src="hall3.jpg" alt="Wedding Hall 3">
+    </div>
+    <button class="prev">&lt;</button>
+    <button class="next">&gt;</button>
+</div>
+
+<script>
+    const images = document.querySelectorAll('.image-container img');
+    const prevButton = document.querySelector('.prev');
+    const nextButton = document.querySelector('.next');
+    let currentIndex = 0;
+
+    function showImage(index) {
+        images.forEach((image, i) => {
+            if (i === index) {
+                image.style.opacity = 1;
+            } else {
+                image.style.opacity = 0;
+            }
+        });
+    }
+
+    prevButton.addEventListener('click', () => {
+        currentIndex = (currentIndex - 1 + images.length) % images.length;
+        showImage(currentIndex);
+    });
+
+    nextButton.addEventListener('click', () => {
+        currentIndex = (currentIndex + 1) % images.length;
+        showImage(currentIndex);
+    });
+
+    // Show the first image initially
+    showImage(currentIndex);
+</script>
+       
+    
+
+    <div class=" event3">
+         
+        <p>As you step into this amazing venue, you will be surrounded with an environment full of joy and celebration where every detail, music taste, every beam of light has been carefully organized to have a magic night with sparkles. </p>
+        <p>Join us for an emotional tapestry, a sensory feast, and a voyage into the amazing world of weddings. This could be the best place where love tales are told, dreams are realised, and memories are created. We can't wait to share in your joy!</p>    
+    </div>
+
+    <footer>
+        &copy; 2023 Hotel Restaurant
+    </footer>
+
+</body>
+</html>

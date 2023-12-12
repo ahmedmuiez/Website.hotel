@@ -1,0 +1,25 @@
+/* Reset some default styles for the list */
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px;
+}
+
+/* Style the list items (horizontal layout) */
+.navbar li {
+    display: inline-block;
+    margin-right: 15px; /* Adjust the spacing between list items */
+}
+
+/* Style the anchor tags */
+.navbar a {
+    text-decoration: none;
+    color: #333; /* Change the text color */
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* Change the color when hovering over a link */
+.navbar a:hover {
+    color: #007BFF; /* Change the hover color */
+}

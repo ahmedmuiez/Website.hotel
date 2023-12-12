@@ -1,0 +1,86 @@
+ 
+.slot{
+    margin-top: 20px;
+    margin-left: -350px;
+}
+.booking__container {
+    position: absolute;
+    bottom: -5rem;
+    margin: 0;
+    transform: translateX(-50%);
+    width: 70%;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 3rem 2rem;
+    border-radius: 2rem;
+    background-color: rgba(107, 56, 56, 0.064);
+   
+    backdrop-filter: blur(5px);
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1);
+  }
+  
+.booking__container form {
+    width: 100%;
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+  }
+  
+.booking__container .input__group{
+    width: 100%;
+    position: relative;
+}
+  
+.booking__container label{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--text-dark);
+    pointer-events: none;
+    transition: 0.3s;
+    margin-left:100px
+}
+  
+.booking__container input{
+    width: 100%;
+    padding: 10px 0;
+    font-size: 1rem;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid var(--primary-color);
+    color: var(--text-dark);
+}
+  
+.booking__container input:focus ~ label{
+    font-size: 0.8rem;
+    top: 0;
+}
+  
+.booking__container .form__group p{
+    margin-top: 0.5rem;
+    font-size: 0.8rem;
+    color: var(--text-light);
+    margin-left: 100px;
+}
+  
+.booking__container .btn{
+    padding: 1rem;
+    outline: none;
+    border: none;
+    font-size: 1.5rem;
+    color: var(--white);
+    background-color: var(--primary-color);
+    border-radius: 100%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+  
+.booking__container .btn:hover{
+    background-color: var(--primary-color-dark);
+}
